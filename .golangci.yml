@@ -1,0 +1,46 @@
+run:
+  timeout: 1m
+  tests: true
+
+linters:
+  enable:
+    - bodyclose
+    - dogsled
+    - exhaustive
+    - goconst
+    - gocyclo
+    - gofmt
+    - goimports
+    - revive
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - ineffassign
+    - misspell
+    - nakedret
+    - noctx
+    - nolintlint
+    - rowserrcheck
+    - staticcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - whitespace
+    - megacheck
+    - govet
+    - errcheck
+    - prealloc
+    - unused
+    - asasalint
+    - gocritic
+  disable:
+  disable-all: false
+  presets:
+    - bugs
+    - unused
+  fast: false
+
+linters-settings:
+  maligned:
+    suggest-new: true
